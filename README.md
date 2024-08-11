@@ -5,5 +5,6 @@
 为了帮助大家快速掌握电脑的基础知识，特别是那些平时更多使用手机的朋友们，我们编写了这本《电脑基础知识快速扫盲手册》。本手册将以简明易懂的语言、图文并茂的形式，介绍一些最基本的电脑操作，帮助您迅速上手，提升信息化技能。    
 ***  
 ## 更新日志：  
-2024/8/9：更新了[硬件篇](https://wasd4726.github.io/#/1).  
-2024/8/10：更换文档框架为[docsify](https://github.com/docsifyjs/docs-zh)，更新了[操作系统篇](https://wasd4726.github.io/#/2)
+2024/8/9：更新了[硬件篇](https://pcbook.top/#/1).  
+2024/8/10：更换文档框架为[docsify](https://github.com/docsifyjs/docs-zh)，更新了[操作系统篇](https://pcbook.top/#/2)   
+2024/8/11：新增[浏览器篇]((https://pcbook.top/#/3),添加了[提问的智慧](https://pcbook.top/#/question)这篇文章

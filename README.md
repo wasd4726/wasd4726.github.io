@@ -7,4 +7,4 @@
 ## 更新日志：  
 2024/8/9：更新了[硬件篇](https://pcbook.top/#/1).  
 2024/8/10：更换文档框架为[docsify](https://github.com/docsifyjs/docs-zh)，更新了[操作系统篇](https://pcbook.top/#/2)   
-2024/8/11：新增[浏览器篇]((https://pcbook.top/#/3),添加了[提问的智慧](https://pcbook.top/#/question)这篇文章
+2024/8/11：新增[浏览器篇](https://pcbook.top/#/3),添加了[提问的智慧](https://pcbook.top/#/question)这篇文章

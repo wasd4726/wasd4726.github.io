@@ -10,6 +10,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
   <link rel="shortcut icon" href="favicon.ico">
+  <!-- 引入 Gitalk 的 CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.css">
 </head>
 <body>
   <style type="text/css">
@@ -18,6 +20,10 @@
     }
   </style>
   <div id="app"></div>
+
+  <!-- 添加 Gitalk 容器 -->
+  <div id="gitalk-container"></div>
+
   <script>
     window.$docsify = {
       name: '赛博扫盲手册',
@@ -34,14 +40,34 @@
         placeholder: '请输入要搜索的关键字',
         noData: '没有结果',
         depth: 6,
-      }
+      },
+      // 初始化并渲染 Gitalk
+      plugins: [
+        function(hook, vm) {
+          hook.doneEach(function() {
+            var gitalk = new Gitalk({
+              clientID: 'Ov23liojWUwc2s8XNdma',
+              clientSecret: 'a01513e81268113e8ddc44826994835d496b9dc8',
+              repo: 'https://github.com/wasd4726/Gitalk_data',  // 仓库名称
+              owner: 'wasd4726',     // 仓库拥有者的GitHub用户名
+              admin: ['wasd4726'],   // 管理员GitHub用户名
+              id: location.pathname,  // 根据页面路径生成唯一的评论ID
+              distractionFreeMode: false  // 不使用类似Facebook评论的无干扰模式
+            });
+            gitalk.render('gitalk-container');
+          });
+        }
+      ]
     }
   </script>
+
   <!-- 图片缩放 -->
   <script src="https://cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js" defer></script>
   <!-- 分页导航 -->
   <script src="https://cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js" defer></script>
+  <!-- 引入 Gitalk 的 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js" defer></script>
 </body>
 </html>
